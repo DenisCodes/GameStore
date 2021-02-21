@@ -1,16 +1,24 @@
-body { background-color: #000000;
+body { background-color: white;
 
+ padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
 
 }
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-    background-color: #0c0c0c;
+    background-color: #1c2b2d;
 
     position: relative;
 
 }
+section {
+
+    background-color: #1f6f8b;
+}
+
 .content-text {
 
     color: white;
