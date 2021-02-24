@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Shop Homepage - Start Bootstrap Template</title>
+    <title>More Information</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -21,8 +21,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 </head>
 
-<body>
-
+<body onload="load()">
+<script src="src/fishInfo.js"></script>
 <nav class="navbar navbar-expand-lg navbar-light " style="background: #1f6f8b ; ">
     <a class="navbar-brand " href="index.html">
         <img src="img/Fish_Logo.png" width="40" height="30" class="d-inline-block align-top" alt="">
@@ -52,10 +52,10 @@
             <div class="container-fliud">
                 <div class="wrapper row">
                     <div class="preview col-md-6">
-                        <p>Img</p>
+                        <img id = "img1">fish</img>
                     </div>
                     <div class="details col-md-6">
-                        <h3 class="product-title">Fish Name</h3>
+                        <h3 class="product-title" id = "name1">Fish Name</h3>
                         <div class="rating">
                             <div class="stars">
                                 <span class="fa fa-star checked"></span>
@@ -65,12 +65,14 @@
                                 <span class="fa fa-star"></span>
                             </div>
                         </div>
+                        <p id = "scary1">Spooky</p>
+                        <p id = "water1">Wet</p>
                         <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum augue in odio rutrum, at convallis sem tempus. Proin gravida, nulla vel hendrerit consectetur, dolor ex tristique lectus, quis posuere leo urna eget metus. Nam non velit aliquam, feugiat arcu ut, porttitor elit. Duis eget dignissim dui. Phasellus at molestie odio. Pellentesque non urna porttitor, convallis turpis sit amet, iaculis metus.
                             Aliquam efficitur, eros nec ornare tristique, tellus dui iaculis orci, nec porttitor nunc ipsum quis tellus. Etiam hendrerit justo a nisi sagittis, volutpat faucibus quam varius. Duis vulputate enim a tempus tincidunt. Nullam eget hendrerit magna. Proin lacinia imperdiet leo, ac
                             vehicula erat feugiat a. Donec laoreet posuere magna, a aliquam massa tristique vitae. Donec vel ex luctus, feugiat nunc et, vestibulum orci. Quisque non erat a velit vestibulum ultrices.
                             Pellentesque auctor nisl vel tristique accumsan. Duis ut risus id libero porttitor suscipit. Mauris sagittis felis mauris, sit amet porttitor mauris mollis a. Nulla accumsan laoreet lacus, eu scelerisque tortor dapibus sed. Sed scelerisque tortor pharetra quam convallis, nec
                         </p>
-                        <h4 class="price">current price: <span>Fish Price</span></h4>
+                        <h4 class="price" id = "price1">current price: <span>Fish Price</span></h4>
                         <div class="action">
                             <button class="add-to-cart btn btn-default" type="button">add to cart</button>
                             <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
