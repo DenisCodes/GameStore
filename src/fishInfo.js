@@ -36,7 +36,7 @@ function render(list){
 
 function getQueryString(){
     var x = location.search;
-    x.split("=",2);
+    x = x.split("=");
     return x[1];
     //will return in this format: ?fish=example
     // we need to isolate example
@@ -46,7 +46,7 @@ function getQueryString(){
 function getFish(string){
     for (var i = 0; i < fish.length ; i++)
     {
-        if (fish[i] == string){
+        if (fish[i].fish == string){
             return fish[i];
         }
 
