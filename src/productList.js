@@ -108,6 +108,13 @@ function toggleShow(show, tag){
         getTag.style.display = 'none';
     }
 }
+function getQueryString(){
+    var x = location.search;
+    return x;
+    //will return in this format: ?fish=example
+    // we need to isolate example
+
+}
 document.querySelector('#brown').addEventListener('change', function(event){
     //color('brown')
     valuesChecker(fish);
