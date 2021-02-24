@@ -28,10 +28,8 @@ function render(list){
     document.getElementById(ids.name).innerHTML = list.fish+' Fish';
     document.getElementById(ids.image).src = list.image;
     document.getElementById(ids.price).innerHTML ='$'+list.price;
-    document.getElementById(ids.name).innerHTML = 'fishInfo.html?fish='+list.fish;
-    document.getElementById(ids.image).innerHTML = 'fishInfo.html?fish='+list.fish;
-    document.getElementById(ids.name).innerHTML = list.scary ? 'Is scary' : 'Not Scary';
-    document.getElementById(ids.name).innerHTML = list.water ? 'Needs water': "Doesn't need water";
+    document.getElementById(ids.scary).innerHTML = list.scary ? 'Is scary' : 'Not Scary';
+    document.getElementById(ids.water).innerHTML = list.water ? 'Needs water': "Doesn't need water";
 }
 
 function getQueryString(){
