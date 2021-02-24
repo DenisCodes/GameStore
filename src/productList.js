@@ -94,6 +94,8 @@ function render(list){
         document.getElementById(ids[i].name).innerHTML = list[i].fish+' Fish';
         document.getElementById(ids[i].image).src = list[i].image;
         document.getElementById(ids[i].price).innerHTML ='$'+list[i].price;
+        document.getElementById(ids[i].name).innerHTML = 'fishInfo.html?fish='+list[i].fish;
+        document.getElementById(ids[i].image).innerHTML = 'fishInfo.html?fish='+list[i].fish;
         toggleShow(list[i].show, ids[i].show);
     }
 }
