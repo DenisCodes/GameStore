@@ -103,8 +103,8 @@ function render(list){
         document.getElementById(ids[i].name).innerHTML = list[i].name.split('_').join('  ');
         document.getElementById(ids[i].image).src = list[i].image;
         document.getElementById(ids[i].price).innerHTML ='$'+list[i].price;
-        document.getElementById(ids[i].name).setAttribute('href','fishInfo.html?games='+list[i].name);
-        document.getElementById(ids[i].link).setAttribute('href','fishInfo.html?games='+list[i].name);
+        document.getElementById(ids[i].name).setAttribute('href','gameInfo.html?games='+list[i].name);
+        document.getElementById(ids[i].link).setAttribute('href','gameInfo.html?games='+list[i].name);
         toggleShow(list[i].show, ids[i].show);
     }
 }
